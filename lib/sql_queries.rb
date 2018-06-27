@@ -21,6 +21,7 @@ end
 
 def selects_most_prominent_color_and_returns_with_count
   "SELECT color, COUNT(name) FROM bears ORDER BY color DESC LIMIT 1;"
+  binding.pry
 end
 
 def counts_number_of_bears_with_goofy_temperaments
